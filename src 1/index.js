@@ -11,9 +11,7 @@ import Default from './layouts/default'
 import './plugins/axios'
 //结构路由里的组件,为了让Default获取上下文
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import {serverBaseUrl} from './server'
-React.baseUrl = serverBaseUrl;
-// React.component.prototype.baseUrl = serverBaseUrl;
+
 ReactDom.render(
   <Router>
     <Route component={Default} />
